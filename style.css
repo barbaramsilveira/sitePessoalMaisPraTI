@@ -1,0 +1,338 @@
+/*Para este projeto foram importadas duas fontes via Google Fonts: */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*Declaração das variáveis de cores e fontes utilizadas no projeto, para garantir a boa manutenção do código.*/
+
+:root {
+    --fundo: #E1F5F2;
+    --cabecalho-rodapé: #6BC5D2 ;
+    --cor-titulos: #390050 ;
+    --cor-textos: #4B527E ;
+    --hover: #5A5D9D;
+    --fonte-titulos: "Krona One", sans-serif;
+    --fonte-textos: "Montserrat", sans-serif;
+}
+
+/* Resetando as configurações iniciais: */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--fundo);
+    padding-top: 70px;
+}
+
+/* Configurações do menu superior */
+.menu-principal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--cabecalho-rodapé);
+    z-index: 1000;
+}
+
+.menu-principal ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    font-family: var(--fonte-titulos);
+    color:#390050;
+}
+
+#nome{
+    margin-right: auto;
+    font-weight: bold;
+    font-size: 1.6em;
+    padding-left: 20px;
+}
+
+li a{
+    color: var(--fonte-titulos);
+    display: block;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+li a:hover{
+    background-color: var(--hover);
+    color: var(--fonte-titulos);
+}
+
+/* Organização dos demais elementos, texto e foto */
+
+.apresentacao{
+    padding: 5% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.apresentacao__conteudo { 
+    width: 72%;
+    display: flex;
+    flex-direction: column;
+}
+
+.apresentacao img{
+    width: 28%;
+    border-radius: 16px;
+}
+
+/* Organização de elementos em páginas sem foto*/
+.conteudo-centralizado{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 5% 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteudo-centralizado .texto-principal,
+.conteudo-centralizado .texto-principal-sem-imagem{
+    text-align: justify;
+}
+
+.conteudo-centralizado .titulo-pagina,
+.conteudo-centralizado .titulo-pagina-sessoes{
+    text-align: center;
+}
+
+.link-redes{
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 20px;
+    background-color: var(--cor-titulos);
+    color: var(--fundo);
+    font-family: var(--fonte-titulos);
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.titulo-pagina{
+    font-size: 2.9em;
+    color:var(--cor-titulos);
+    font-family: var(--fonte-titulos);
+    padding: 0;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
+    flex-wrap: wrap;
+    font-weight: bold;
+}
+
+.destaque-titulo{
+    color: var(--cor-textos);
+    font-weight: normal;
+}
+
+/*Estilos serão manipulados pelo Javascript na página inicial*/
+.efeito-maquina-escrever {
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    width: 0;
+    animation: typing 3.5s steps(var(--characters)) forwards;
+}
+
+.cursor-piscando::after {
+    content: "|";
+    margin-left: 5px;
+    animation: blink 1s infinite;
+}
+
+@keyframes typing {
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.titulo-pagina-sessoes{
+    font-size: 2.5em;
+    color:var(--cor-titulos);
+    font-family: var(--fonte-titulos);
+    padding: 0;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
+    flex-wrap: wrap;
+    font-weight: bold;
+}
+
+.destaque-titulo-formacao{
+    font-size: 0.8em;
+}
+
+.texto-principal{
+    font-size: 1.5em;
+    font-family: var(--fonte-textos);
+    color: var(--cor-textos);
+    padding: 0;
+    text-align: justify;
+    margin-bottom: 24px;
+}
+
+.texto-principal-sem-imagem{
+    width: 100%;
+    font-size: 1.5em;
+    font-family: var(--fonte-textos);
+    color: var(--cor-textos);
+    text-align: justify;
+    margin-bottom: 24px;
+}
+
+/*estilos do rodapé da página*/
+.rodape{
+    background-color: var(--cabecalho-rodapé);
+    font-family: var(--fonte-titulos);
+    color: var(--cor-titulos);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/*formatação do formulário de contato*/
+#container-formulario{
+    background-color:var(--cabecalho-rodapé);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0,0.2);
+    padding: 40px;
+    font-family: var(--fonte-textos);
+    font-weight: bold;
+    color: var(--cor-titulos);
+    width: 100%;
+    max-width: 600px;
+}
+
+.input-group{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-group input,
+.input-group textarea{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--fundo);
+    font-family: var(--fonte-textos);
+    font-size: 1em;
+    color: var(--cor-textos);
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.buttons button{
+    width: 100%;
+    padding: 15px;
+    background-color: var(--cor-titulos);
+    color: var(--fundo);
+    font-family: var(--fonte-titulos);
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+}
+
+.buttons button:hover{
+    background-color: var(--hover);
+}
+/*Responsividade*/
+
+/*Configurações para visualização em telas até 1024px, tablets, celulares maiores: */
+@media (max-width: 1024px) {
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 8% 5%;
+        gap: 50px;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+
+    .titulo-pagina {
+        font-size: 2.5em;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #nome {
+        font-size: 1.4em;
+    }
+}
+
+/*Configurações para visualização em telas até 1024px, exemplo, smartphones: */
+
+@media (max-width: 768px) {
+
+    body {
+        padding-top: 280px; 
+    }
+
+    .menu-principal ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px 0;
+    }
+
+    #nome {
+        margin-right: 0;
+        font-size: 1.5em; 
+        padding: 15px 0;
+    }
+
+    li a {
+        padding: 15px 16px;
+    }
+
+    .titulo-pagina {
+        font-size: 1.8em;
+    }
+
+    .texto-principal,
+    .texto-principal-sem-imagem {
+        font-size: 1.2em;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .apresentacao {
+        padding: 30% 5%;
+    }
+
+    .apresentacao img {
+        width: 40%;
+    }
+}
