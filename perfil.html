@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio - Bárbara Martins da Silveira</title>
+</head>
+<body id="home">
+    <header>
+        <nav class="menu-principal">
+            <ul>
+                <li id="nome"><a href="#home">Bárbara Martins da Silveira</a></li>
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+        <main>
+        <section id="apresentacao" class="apresentacao">
+            <div class="apresentacao__conteudo">
+                <h1 class="titulo titulo-pagina">
+                    <span id="linha1"></span><br>
+                    <span id="linha2" class="destaque-titulo"></span>
+                </h1>
+            </div>
+            <img class="apresentacao__imagem" src="./assets/foto2.jpeg" alt="Foto da Bárbara Martins da Silveira">
+        </section>
+        <section id="sobre" class="apresentacao">
+            <div class="apresentacao__conteudo">
+                <h1 class="titulo-pagina-sessoes">Sobre mim:</h1>
+                <p class="texto-principal"> Olá! Meu nome é Bárbara e sou estudante de Análise e Desenvolvimento de Sistemas, com formação prevista para o primeiro semestre de 2027. Atualmente, estou em transição de carreira da área administrativa para a tecnologia, buscando ativamente minha primeira oportunidade nas áreas de Desenvolvimento ou Testes de Software. 
+                </p>
+                <p class="texto-principal">Embora iniciante na área, sou uma profissional dedicada e focada em construir uma base sólida de conhecimento. Este portfólio demonstra minha evolução e os projetos que venho desenvolvendo ao longo da minha jornada acadêmica e em cursos complementares.
+                </p>
+                <p class="texto-principal">Para além da minha jornada profissional, busco equilíbrio em atividades que me enriqueçam pessoalmente. Gosto de viajar, passar meu tempo livre com a minha família e me dedicar a hobbies como leitura, culinária e cinema.</p>
+            </div>
+            <img class="apresentacao__imagem" src="./assets/foto3.jpg" alt="Foto da Bárbara Martins da Silveira">
+        </section>
+
+        <section id="formacao" class="conteudo-centralizado">       
+            <h1 class="titulo-pagina-sessoes">Formação</h1>      
+            <h2>         
+            </h2> 
+            <ul>
+                <li class="texto-principal">
+                    <strong>Análise e Desenvolvimento de Sistemas</strong> | Uninter | Conclusão prevista para o 1º semestre de 2027.
+                </li>
+                <li class="texto-principal">
+                    <strong>Formada em Design de Moda</strong> | Universidade Luterana do Brasil (Ulbra) Bolsista integral pelo programa ProUni.
+                </li>
+            </ul>
+            <h3 class="titulo-pagina-sessoes">
+                <strong class="destaque-titulo-formacao">Desenvolvimento Profissional e Especializações:</strong>
+            </h3>        
+            <article>
+                <ul>
+                    <li class="texto-principal"><strong>Desenvolvedor Full Stack Jr.</strong> | MaispraTI (em andamento).</li>
+                    <li class="texto-principal"><strong>Oracle Next Education (ONE) - Especialização Back-End Java</strong> | Oracle (em andamento).</li>
+                </ul>
+            </article>
+             <h4 class="titulo-pagina-sessoes">
+                <strong class="destaque-titulo-formacao">Idiomas:</strong>
+            </h4>
+            <ul>
+                <li class="texto-principal"><strong>Português</strong> | Nível: nativo.</li>
+                <li class="texto-principal"><strong>Inglês</strong> | Nível: básico (em desenvolvimento).</li>
+            </ul>
+        </section>
+
+        <section id="portfolio" class="conteudo-centralizado">       
+            <h1 class="titulo-pagina-sessoes">Meu portfólio</h1>
+            <aside>
+                <p class="texto-principal">No meu GitHub você pode conferir a aplicação prática das minhas habilidades através dos projetos que desenvolvi na faculdade e em outros cursos.</p>
+                <p class="link-centralizado">
+                <a class="link-redes" href="https://github.com/barbaramsilveira" target="_blank" rel="noopener noreferrer">Meu GitHub</a>
+                </p>
+                <p class="texto-principal">
+                    Minha trajetória profissional em administração e na indústria têxtil me proporcionou uma base sólida em raciocínio lógico, planejamento estratégico e capacidade analítica. Hoje, aplico essas competências diretamente na minha carreira como desenvolvedora para criar soluções eficientes e bem estruturadas. Para conhecer os detalhes da minha experiência profissional, convido você a visitar meu perfil no LinkedIn:</p>
+                <p class="link-centralizado">>
+                <a class="link-redes" href="https://www.linkedin.com/in/barbaramartinsdasilveira/" target="_blank" rel="noopener noreferrer">Meu LinkedIn</a>
+                </p>
+            </aside>
+        </section>
+
+        <section id="contato" class="conteudo-centralizado">       
+            <h1 class="titulo-pagina-sessoes">Contato</h1>
+            <p class="texto-principal">Se interessou pelo meu trabalho ou gostaria de deixar uma sugestão?
+            </p>
+            <div id="container-formulario">
+                <h2 class="texto-principal">Deixe sua mensagem!</h2>
+                <form>
+                    <div class="input-group">     
+                        <label for="nome-form">Nome: </label>
+                        <input id="nome-form" type="text">
+                    </div>
+                    <div class="input-group">
+                        <label for="email-form">E-mail: </label>
+                        <input id="email-form" type="email">
+                    </div>
+                    <div class="input-group">
+                        <label for="message">Mensagem </label><textarea id="message" name="message" placeholder="Deixe sua mensagem:"></textarea>
+                    </div>
+                    <div class="buttons">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por Bárbara Martins da Silveira</p>
+    </footer>
+    <script src="script.js" defer></script> 
+</body>
+</html>

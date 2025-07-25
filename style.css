@@ -4,11 +4,11 @@
 /*Declaração das variáveis de cores e fontes utilizadas no projeto, para garantir a boa manutenção do código.*/
 
 :root {
-    --fundo: #E1F5F2;
-    --cabecalho-rodapé: #6BC5D2 ;
-    --cor-titulos: #390050 ;
-    --cor-textos: #4B527E ;
-    --hover: #5A5D9D;
+    --fundo: #FAF0E6;
+    --cabecalho-rodapé: #B9B4C7 ;
+    --cor-titulos: #704264 ;
+    --cor-textos: #49243E ;
+    --hover: #BB8493;
     --fonte-titulos: "Krona One", sans-serif;
     --fonte-textos: "Montserrat", sans-serif;
 }
@@ -52,6 +52,10 @@ body{
     padding-left: 20px;
 }
 
+#nome a:hover {
+    background-color: transparent;  /*Tirando efeito hover do nome no canto superior esquerdo */
+}
+
 li a{
     color: var(--fonte-titulos);
     display: block;
@@ -91,10 +95,11 @@ li a:hover{
 .conteudo-centralizado{
     max-width: 900px;
     margin: 0 auto;
-    padding: 5% 15px;
+    padding: 5% 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 40px;
 }
 
 .conteudo-centralizado .texto-principal,
@@ -105,6 +110,8 @@ li a:hover{
 .conteudo-centralizado .titulo-pagina,
 .conteudo-centralizado .titulo-pagina-sessoes{
     text-align: center;
+    padding: 10px;
+    gap: 10px;
 }
 
 .link-redes{
@@ -120,6 +127,11 @@ li a:hover{
     border-radius: 8px;
 }
 
+.link-centralizado {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
 .titulo-pagina{
     font-size: 2.9em;
     color:var(--cor-titulos);
@@ -128,7 +140,7 @@ li a:hover{
     margin-bottom: 20px;
     display: flex;
     align-items: baseline;
-    gap: 15px;
+    gap: 10px;
     flex-wrap: wrap;
     font-weight: bold;
 }
@@ -185,17 +197,7 @@ li a:hover{
     font-size: 0.8em;
 }
 
-.texto-principal{
-    font-size: 1.5em;
-    font-family: var(--fonte-textos);
-    color: var(--cor-textos);
-    padding: 0;
-    text-align: justify;
-    margin-bottom: 24px;
-}
-
-.texto-principal-sem-imagem{
-    width: 100%;
+.texto-principal {
     font-size: 1.5em;
     font-family: var(--fonte-textos);
     color: var(--cor-textos);
@@ -251,6 +253,7 @@ li a:hover{
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    
 }
 
 .buttons button{
@@ -288,12 +291,18 @@ li a:hover{
         justify-content: center;
     }
 
+    .titulo-pagina-sessoes{
+        font-size: 2em;
+        text-align: center;
+        justify-content: center;
+    }
+
     #nome {
-        font-size: 1.4em;
+        font-size: 2em;
     }
 }
 
-/*Configurações para visualização em telas até 1024px, exemplo, smartphones: */
+/*Configurações para visualização em telas até 768px, exemplo, smartphones: */
 
 @media (max-width: 768px) {
 
@@ -309,7 +318,7 @@ li a:hover{
 
     #nome {
         margin-right: 0;
-        font-size: 1.5em; 
+        font-size: 1.5m; 
         padding: 15px 0;
     }
 
@@ -321,8 +330,13 @@ li a:hover{
         font-size: 1.8em;
     }
 
-    .texto-principal,
-    .texto-principal-sem-imagem {
+    .titulo-pagina-sessoes{
+        font-size: 1.5em;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .texto-principal {
         font-size: 1.2em;
         padding: 20px;
         margin: 20px;
