@@ -1,17 +1,14 @@
-**Site Pessoal** — Projeto do Curso Desenvolvedor Full-Stack Junior (MaisPraTI)
+# Site Pessoal — Projeto do Curso Desenvolvedor Full-Stack Junior (MaisPraTI)
 Este projeto foi desenvolvido como parte do curso Desenvolvedor Full-Stack Junior, promovido pela MaisPraTI.
 O desafio consistiu em criar uma página de perfil pessoal contendo seções como:
 
-**Sobre mim**
+### Sobre mim
 
-**Projetos**
+### Projetos
 
-**Contato**
+### Contato
 
 Decidi aprimorar um projeto pessoal existente, tornando o código mais semântico e reunindo todo o conteúdo em uma única página, visando também sua utilização como meu currículo online.
-
-Acesse o deploy do projeto:
-site-pessoal-mais-pra-ti.vercel.app
 
 Tecnologias Utilizadas
 <p align="left"> <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white" alt="HTML5"> <img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white" alt="CSS3"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black" alt="JavaScript"> </p>
@@ -21,7 +18,20 @@ CSS3 (com Flexbox, Grid, variáveis e media queries)
 
 JavaScript puro (sem frameworks)
 
-**Segue enunciado da tarefa:**
+
+### Para visualizar este projeto em seu computador local:
+
+Faça o download dos arquivos (perfil.html e styles.css), depois navegue até a pasta do projeto no seu computador.
+
+Dê duplo clique no arquivo perfil.html ou abra-o com o botão direito > Abrir com > seu navegador preferido (Chrome, Firefox, Edge, etc).
+
+Isso abrirá sua página pessoal diretamente no navegador, com todos os estilos e funcionalidades aplicados.
+
+Ou, se preferir, pode visualizar o deploy do projeto, na ferramenta Vercel:
+site-pessoal-mais-pra-ti.vercel.app
+
+
+### Segue enunciado da tarefa:
 
 1. Repositório GitHub
 Crie um repositório público novo (ou reutilize um que já tenha para o curso).
