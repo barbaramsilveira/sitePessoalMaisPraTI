@@ -28,7 +28,7 @@ Dê duplo clique no arquivo perfil.html ou abra-o com o botão direito > Abrir c
 Isso abrirá sua página pessoal diretamente no navegador, com todos os estilos e funcionalidades aplicados.
 
 Ou, se preferir, pode visualizar o deploy do projeto, na ferramenta Vercel:
-site-pessoal-mais-pra-ti.vercel.app
+[Site pessoal Barbara Martins](https://site-pessoal-mais-pra-ti.vercel.app)
 
 
 ### Segue enunciado da tarefa:
